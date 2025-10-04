@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "IPhone 16",
+      "description": "Iphone 16 mới nhất",
+      "price": 1200,
+      "image": "public/img/1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Samsung Galaxy S25",
+      "description": "Samsung flagship 2025",
+      "price": 999,
+      "image": "public/img/2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Google Pixel 8",
+      "description": "Google's latest smartphone",
+      "price": 899,
+      "image": "public/img/3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "OnePlus 12",
+      "description": "High-performance smartphone",
+      "price": 799,
+      "image": "public/img/4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sony Xperia 1 V",
+      "description": "Sony's premium smartphone",
+      "price": 1099,
+      "image": "public/img/5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Xiaomi Mi 13",
+      "description": "Affordable flagship",
+      "price": 699,
+      "image": "public/img/6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Motorola Edge 40",
+      "description": "Motorola's latest release",
+      "price": 599,
+      "image": "public/img/7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Nokia X30",
+      "description": "Nokia's new smartphone",
+      "price": 499,
+      "image": "public/img/8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Asus ROG Phone 7",
+      "description": "Gaming smartphone",
+      "price": 899,
+      "image": "public/img/4.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Huawei P60 Pro",
+      "description": "Huawei's flagship",
+      "price": 999,
+      "image": "public/img/4.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Oppo Find X6 Pro",
+      "description": "Oppo's premium smartphone",
+      "price": 899,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 12,
+      "title": "Vivo X90 Pro",
+      "description": "Vivo's latest flagship",
+      "price": 799,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 13,
+      "title": "Realme GT 3",
+      "description": "Affordable performance",
+      "price": 599,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 14,
+      "title": "ZTE Axon 40 Ultra",
+      "description": "ZTE's flagship smartphone",
+      "price": 699,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 15,
+      "title": "Lenovo Legion Phone Duel 2",
+      "description": "Gaming smartphone by Lenovo",
+      "price": 899,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 16,
+      "title": "Alcatel 1L Pro",
+      "description": "Budget-friendly smartphone",
+      "price": 199,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 17,
+      "title": "Fairphone 4",
+      "description": "Sustainable smartphone",
+      "price": 499,
+      "image": "https://via.placeholder.com/200"
+    },
+    {
+      "id": 18,
+      "title": "HTC U20 5G",
+      "description": "HTC's latest 5G smartphone",
+      "price": 599,
+      "image": "https://via.placeholder.com/200"
+    }
+  ]
+}

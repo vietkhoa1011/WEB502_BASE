@@ -1,17 +1,14 @@
-
-import Button from "./components/button";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
-
   return (
-    <div style={{ padding: "20px" }}>
-      {/* Có truyền color */}
-      <Button text="Button Đỏ" color="red" onClick={() => alert("Click đỏ")} />
-
-      {/* Không truyền color => random */}
-      <Button text="Button Random" onClick={() => alert("Click random")} />
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />} />
+      <Route path="/products/:id" element={<ProductDetail />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
