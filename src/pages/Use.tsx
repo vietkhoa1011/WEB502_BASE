@@ -1,14 +1,21 @@
 import { useEffect, useState } from "react";
 
+interface User {
+  id: number;
+  name: string;
+  phone: string;
+  website: string;
+}
+
 function Use() {
-  const [users, setUsers] = useState([]);
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [users, setUsers] = useState<User[]>([]);
+  const [selectedUser, setSelectedUser] = useState<User | null>(null);
 
   // Gọi API khi component mount
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
-      .then((data) => setUsers(data))
+      .then((data: User[]) => setUsers(data))
       .catch((err) => console.error("Lỗi tải dữ liệu:", err));
   }, []);
 
