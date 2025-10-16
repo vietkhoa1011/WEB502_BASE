@@ -21,8 +21,8 @@ export default function Sidebar() {
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link to="/admin/Dashboard" className="nav-link text-white">
-            Dashboard
+          <Link to="/admin/ProductTable" className="nav-link text-white">
+              ProductTable
           </Link>
         </li>
         <li>

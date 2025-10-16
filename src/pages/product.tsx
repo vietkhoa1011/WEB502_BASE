@@ -59,7 +59,7 @@ function Product() {
           </div>
         ))}
       </div>
-
+      
       {/* Phân trang */}
       <nav>
         <ul className="pagination">

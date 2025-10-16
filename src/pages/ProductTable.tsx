@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function ProductTable() {
   const [products, setProducts] = useState<any[]>([]);
@@ -7,6 +8,13 @@ function ProductTable() {
   const [maxPrice, setMaxPrice] = useState("");
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  
+  const handleDelete = async (id: number) => {
+    if (window.confirm("Bạn có chắc muốn xóa?")) {
+      await fetch(`http://localhost:3000/products/${id}`, { method: "DELETE" });
+      setProducts(products.filter((p) => p.id !== id));
+    }
+  };
 
   useEffect(() => {
     // Tạo query string linh hoạt
@@ -31,8 +39,8 @@ function ProductTable() {
       <h2>Danh sách sản phẩm</h2>
 
       {/* Bộ lọc */}
-      <div className="row mb-3">
-        <div className="col-md-3">
+      <div className="row mb-3 align-items-center">
+        <div className="col-md-3 d-flex align-items-center">
           <input
             type="text"
             placeholder="Tìm kiếm..."
@@ -68,6 +76,11 @@ function ProductTable() {
             }}
           />
         </div>
+        <div className="col-md-3 text-end">
+          <Link to="/admin/ProductTable/AddProduct" className="btn btn-primary">
+            Thêm
+          </Link>
+        </div>
       </div>
 
       {/* Bảng danh sách */}
@@ -94,6 +107,20 @@ function ProductTable() {
                 <td>{p.title}</td>
                 <td>{p.description}</td>
                 <td>{p.price}</td>
+                <td>
+                  <Link
+                    to={`/admin/ProductTable/EditProduct/${p.id}`}
+                    className="btn btn-sm btn-warning me-2"
+                  >
+                    Sửa
+                  </Link>
+                  <button
+                    className="btn btn-sm btn-danger"
+                    onClick={() => handleDelete(p.id)}
+                  >
+                    Xóa
+                  </button>
+                </td>
               </tr>
             ))
           )}

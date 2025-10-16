@@ -4,7 +4,7 @@
       "id": 1,
       "title": "IPhone 16",
       "description": "Iphone 16 mới nhất",
-      "price": 1200,
+      "price": 1211,
       "image": " /img/1.jpg"
     },
     {
@@ -120,11 +120,10 @@
       "image": " /img/2.jpg"
     },
     {
-      "id": 18,
-      "title": "HTC U20 5G",
-      "description": "HTC's latest 5G smartphone",
-      "price": 599,
-      "image": " /img/2.jpg"
+      "title": "Samsung Galaxis 21",
+      "description": "Samsung flagship 2025",
+      "price": 1111,
+      "id": 18
     }
   ]
 }
